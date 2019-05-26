@@ -1,0 +1,11 @@
+/* infoicon.css */
+
+.info-icon {
+  max-width: 15px !important;
+  max-height: 15px !important;
+  margin: 5px;
+}
+
+.info-icon:hover {
+  fill: blue;
+}
