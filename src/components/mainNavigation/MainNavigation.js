@@ -40,11 +40,7 @@ class MainNavigation extends Component {
                 placement='bottom'
                 tooltip='Watch on Facebook'
               >
-                <img
-                  className='nav-img'
-                  src={FBIcon}
-                  alt='Watch on Facebook'
-                />
+                <img className='nav-img' src={FBIcon} alt='Watch on Facebook' />
               </PopUpOverlay>
             </Nav.Link>
             <PopUpOverlay
