@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 // Using Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
+import 'modernizr/bin/modernizr';
 
 // Animate.css
 import 'animate.css';
