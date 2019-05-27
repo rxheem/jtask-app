@@ -27,7 +27,9 @@ class MainNavigation extends Component {
         id='MainNavigation'
         className='animated fadeIn'
       >
-        <Navbar.Brand href='/'>JT Ask</Navbar.Brand>
+        <Navbar.Brand href='/'>JT 
+          <img src='https://cdn.sstatic.net/Sites/askubuntu/img/favicon.ico?v=eff8fd315b9e' alt='Ask' />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='main-navbar-nav' />
 
         <Navbar.Collapse id='main-navbar-nav'>
