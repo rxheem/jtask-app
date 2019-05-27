@@ -50,27 +50,27 @@ class MainNavigation extends Component {
 
         <Navbar.Collapse id='main-navbar-nav'>
           <Nav className='justify-content-end mr-auto'>
-            <MainNavItem title='Ask' to='/top-questions/' />
+            <MainNavItem title='Ask' to='/ask/' />
             <MainNavItem title='Top Questions' to='/top-questions/' />
             <Nav.Link>
               <PopUpOverlay
                 key='bottom'
                 placement='bottom'
-                tooltip='Watch on Facebook'
+                tooltip='Like on Facebook'
               >
-                <img className='nav-img' src={FBIcon} alt='Watch on Facebook' />
+                <img className='nav-img' src={FBIcon} alt='Like on Facebook' />
               </PopUpOverlay>
             </Nav.Link>
             <PopUpOverlay
               key='bottom'
               placement='bottom'
-              tooltip='Follow us on Instagram'
+              tooltip='Follow on Instagram'
             >
               <Nav.Link>
                 <img
                   className='nav-img'
                   src={IGIcon}
-                  alt='Follow us on Instagram'
+                  alt='Follow on Instagram'
                 />
               </Nav.Link>
             </PopUpOverlay>
@@ -89,9 +89,8 @@ class MainNavigation extends Component {
             </PopUpOverlay>
           </Nav>
           <Nav className='justify-content-end ml-auto mr-sm-1'>
+            <MainNavItem title='How it Works' to='/how-it-works/' />
             <MainNavItem title='Privacy' to='/privacy/' />
-            <MainNavItem title='Sign In' to='/sign-in/' />
-
             <Form inline>
               <FormControl
                 id='searchQuery'
