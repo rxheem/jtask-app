@@ -19,6 +19,18 @@ import InfoIcon from '../../common/infoIcon/InfoIcon';
 import './css/MainNavigation.css';
 
 class MainNavigation extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      searchQuery: ''
+    };
+  }
+
+  handleChange(event) {
+    this.setState({ [event.target.id]: event.target.value });
+  }
+
   render() {
     return (
       <Navbar
@@ -27,8 +39,12 @@ class MainNavigation extends Component {
         id='MainNavigation'
         className='animated fadeIn'
       >
-        <Navbar.Brand href='/'>JT 
-          <img src='https://cdn.sstatic.net/Sites/askubuntu/img/favicon.ico?v=eff8fd315b9e' alt='Ask' />
+        <Navbar.Brand href='/'>
+          JT
+          <img
+            src='https://cdn.sstatic.net/Sites/askubuntu/img/favicon.ico?v=eff8fd315b9e'
+            alt='Ask'
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='main-navbar-nav' />
 
@@ -78,9 +94,13 @@ class MainNavigation extends Component {
 
             <Form inline>
               <FormControl
+                id='searchQuery'
+                name='searchQuery'
                 type='text'
                 placeholder='Search for a question'
                 className='mr-sm-2'
+                value={this.state.searchQuery}
+                onChange={this.handleChange.bind(this)}
               />
               <Button variant='outline-primary'>Search</Button>
             </Form>
