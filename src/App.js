@@ -23,10 +23,10 @@ class App extends Component {
 
         {/* Switch */}
         <Switch>
-
           {/* All routes */}
           <Route exact path='/' component={Home} />
           <Route exact path='/ask/' component={Ask} />
+          <Route exact path='/privacy/' component={Privacy} />
         </Switch>
       </div>
     );

@@ -1,11 +1,15 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 import { withRouter } from 'react-router-dom';
+
+// Components
+import AskInputCollector from '../../components/askInputCollector/AskInputCollector';
 
 const Ask = () => {
   return (
-    <div>
-      <span />
-    </div>
+    <Container fluid={true}>
+      <AskInputCollector />
+    </Container>
   );
 };
 

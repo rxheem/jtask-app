@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 const Privacy = () => {
   return (
@@ -8,4 +9,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default withRouter(Privacy);
