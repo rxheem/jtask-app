@@ -8,14 +8,21 @@ import FormControl from 'react-bootstrap/FormControl';
 class AskInputCollector extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      category: '',
+      question: ''
+    };
   }
   render() {
     return (
       <div>
         <Form>
           <InputGroup>
-            <select class='custom-select' id='category' style ={{ maxWidth: '250px'}}>
+            <select
+              class='custom-select'
+              id='category'
+              style={{ maxWidth: '250px' }}
+            >
               <option selected>Choose Category</option>
               <option value=''>Bible Passage</option>
               <option value=''>Church Beliefs and Morals</option>
@@ -24,7 +31,7 @@ class AskInputCollector extends Component {
               <hr />
               <option value=''>Other</option>
             </select>
-            <FormControl aria-describedby='basic-addon1' />
+            <FormControl aria-describedby='question' />
           </InputGroup>
         </Form>
       </div>
